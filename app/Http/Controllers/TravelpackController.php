@@ -8,7 +8,7 @@ use App\Travelpack;
 class TravelpackController extends Controller
 {
     public function index(){
-        $travelpack = Travelpack::all();
-        return view('pack', compact('travelpack'));
+        $pack = Travelpack::all();
+        return view('pack', compact('pack'));
     }
 }

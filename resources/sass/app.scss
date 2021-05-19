@@ -1,1 +1,38 @@
-//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .card{
+        margin: 15px 15px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 200px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        img{
+            
+            height: 150px;
+            overflow: hidden;
+        }
+
+        h4, p, span{
+            padding: 5px 0;
+        }
+
+        p.price{
+            font-weight: bold;
+            color: green;
+            font-size: 1.5em;
+            text-align: end;
+        }
+    }
+}

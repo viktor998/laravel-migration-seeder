@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .card {
+  margin: 15px 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 200px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+main .card img {
+  height: 150px;
+  overflow: hidden;
+}
+
+main .card h4,
+main .card p,
+main .card span {
+  padding: 5px 0;
+}
+
+main .card p.price {
+  font-weight: bold;
+  color: green;
+  font-size: 1.5em;
+  text-align: end;
+}
+
